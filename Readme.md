@@ -14,11 +14,11 @@ Scala のプログラムを眺めて、その実行方法を知る方法：
 
 `trafficlight.scala`を眺めると、`TrafficLightApp`オブジェクトが`extends App`様式で定義されています。このため、このプログラムは`runMain TrafficLightApp`を実行すればよいことがわかります。
 
-## タイマーの例 (`timer1.scala` と `timer2.scala`)
+## タイマーの例 (`timer1.scala` と `timer2.scala`)
 
 お詫び：実行開始時にフォント関連のエレーメッセージが表示され、TimerApp1のフォントが異様にきたなかったとしても我慢してもらいたい。これは最近、Javaについて報告されているバグに由来するらしいです。
 
-## 決定性オートマトンのシミュレータの例: `automaton.scala`
+## 決定性オートマトンのシミュレータの例: `automaton.scala`
 
 ## 点滅間隔が指定された信号の例: `scheduledtrafficlight.scala`
 
