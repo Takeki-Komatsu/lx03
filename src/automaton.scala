@@ -62,13 +62,14 @@ object AutomatonApp extends App {
   // 状態遷移関数
   def transition(state: String, input: Char): String =
     (state, input) match {
-      case ("q", '0')   => "q0"
-      case ("q", '1')   => "q"
-      case ("q0", '0')  => "q00"
-      case ("q0", '1')  => "q"
-      case ("q00", '0') => "q00"
-      case ("q00", '1') => "q001"
-      case ("q001", _)  => "q001"
+      case ("q", '0')    => "q0"
+      case ("q", '1')    => "q"
+      case ("q0", '0')   => "q00"
+      case ("q0", '1')   => "q"
+      case ("q00", '0')  => "q00"
+      case ("q00", '1')  => "q001"
+      case ("q001", '0') => "q0"
+      case ("q001", '1') => "q" 
       case _            => println("Something is wrong."); assert(false); ""
     }
 
